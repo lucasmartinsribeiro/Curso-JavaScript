@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro programa</title>
+    <style>
+        body{
+            background-color: aqua; /* Comentario em css */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>  <!-- Comentario em html -->
+
+    <script>
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2}, é igual a ${soma}`) //usa template string
+
+        //Comentarios sobre o codigo
+
+        /* 
+        Desse jeito esta fazendo uma cocatenação
+        E se voce colocar 4 e 2 vai retornar, por exemplo: 42. Pois esta fazendo a soma das strings.
+
+        var n1 = window.prompt('Digite um numero: ') //String
+        var nw = window.prompt('Digite outro numero: ') //String
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+        */
+
+
+        /*
+        O comando Number.parseFloat() trata de uma string para um number flutuante antes de fazer a soma, 
+        também tem Number.parseInt() que trata de numeros inteiro. E por ultimo existe a forma que voce deixa
+        a cargo do JS decidir se é float ou int, é so colocar Number();
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + soma)
+
+        */
+
+        //(number + number) para adição
+        //(string + string) para concatenção
+
+        /*
+        Se voce quiser trazer de number para string de novo, pode utilizar o comando string()
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + string(soma))
+        */
+
+    </script>
+</body>
+</html>

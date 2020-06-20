@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            background-color:rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id ="msg">Clique em mim</div>
+    <div name ="mensage">Clique em mim</div>
+    <div class ="mensagem">Clique em mim</div>
+
+    <script>
+        // Introdução ao DOM, selecionando elementos
+
+        //Como seleciona por Marca - getElementsByTagName()
+        let p1 = window.document.getElementsByTagName('p')[1]
+        let corpo = window.document.body
+        /*
+        window.document.write('Está escrito assim: ' + p1.innerText) //Escrever na tela o texto que esta dentro do primeiro paragrafo
+        p1.style.color = 'blue' //Mudar a cor do paragrafo
+        corpo.style.background = 'black' //Mudar a cor do corpo
+        window.alert(p1.innerText)//Pega o texto sem as filhas, no caso sem a formatação.
+        window.alert(p1.innerHTML)//Já esse pega o html inteiro, inclusive com as tags filhas.
+        */
+
+
+        /*Como seleciona por ID - getElementByld()
+        let d = window.document.getElementById('msg')
+        d.style.background = 'green'//Para mudar a cor da div
+        d.innerText = 'Estou aguardando...'//Para escrever outra coisa na div
+        */
+        
+
+        /*Como seleciona por Nome - getElementsByName()
+        let d = window.document.getElementsByName('mensage')[0]
+        di.innerText = 'Olá'//Para escrever outra coisa na div
+        */
+
+
+        /*Como seleciona por Classe - getElementsByClassName()
+        let d = window.document.getElementsByClassName('mensagem')[0]
+        d.innerText = 'Bem vindo'//Para escrever outra coisa na div
+        */
+
+
+        /*Como seleciona por Seletor - querySelecor() e também tem o querySelectorAll(), que é quando precisa 
+        //utilizar o plural
+        let d = window.document.querySelector('div#msg')//Quando é ID se usa '#', quando é classe se usa '.'
+        d.style.color = 'blue'
+        */
+
+    </script>
+</body>
+
+</html>
